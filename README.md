@@ -25,10 +25,13 @@ This workflow is configurable; you do **not** need to use any particular folder 
 1. In Alfred, with the workflow selected, click **Configure…** (or the workflow’s configuration button).
 2. Under **Workflow Environment Variables**, find:
    - `inbox_folder`
-3. Set `inbox_folder` to the full path of the folder where you want new notes saved, for example:
+3. Set `inbox_folder` to the full path of the folder where you want new document saved, for example:
 
-   - `/Users/yourname/Documents/Notes`
+   - `/Users/yourname/Documents/Folder`
    - `/Users/yourname/Library/Mobile Documents/iCloud~com~iawriter~iA-Writer/Documents/Inbox`
+
+In my case, it's the following (slightly edited):
+- `/Users/myName/Library/Mobile Documents/27M4NQAEA44~pro~writer/Documents/📥 Inbox`
 
 4. Close the configuration window to save.
 
@@ -38,11 +41,11 @@ This workflow is configurable; you do **not** need to use any particular folder 
 - Type:
 
   - `doc Your title` → creates `Your title.md` in your inbox folder.
-  - `doc` (no title) → creates `Quick Note.md` (the default title).
+  - `doc` (no title) → creates `Inbox Document.md` (the default title).
 
 - The workflow will:
   1. Create the Markdown file in `inbox_folder`.
-  2. Insert `# Your title` (or `# Quick Note`) as the first line.
+  2. Insert `# Your title` (or `# Inbox Document`) as the first line.
   3. Open the file in **iA Writer** and bring it to the front.
   4. Optionally show an Alfred notification that `"Your title.md" was created.
 
@@ -55,4 +58,4 @@ This workflow is configurable; you do **not** need to use any particular folder 
 ## Notes
 
 - To change the keyword from `doc` to something else, double-click the **Keyword** object in the workflow and edit the keyword.
-- The default title used when you type only `doc` can be changed in the **Args & Vars** object by editing the placeholder from `{query:Quick Note}` to your preferred text.
+- The default title used when you type only `doc` can be changed in the **Args & Vars** object by editing the placeholder from `{query:Inbox Document}` to your preferred text.
